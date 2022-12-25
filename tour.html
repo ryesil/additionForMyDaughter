@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>Natours | The Park Camper Tour</title>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body style=" display: flex;flex-direction:row; ">
+  <div>
+<form style=" justify-content: center;align-items: center; margin-top:20px; width: fit-content;" id="form">
+  <div style="margin:20px ">
+    <label>
+      <h1>Start</h1>
+    </label>
+   <button style="height:100px; width: 100px; ; font-size: large" id="starter">Start</button>
+  </div>
+  <div style="display:flex; justify-content: center;align-items: center; margin-top:20px;">
+  <div style="margin:20px">
+  <label>
+    <h1 >number 1</h1>
+  </label> 
+  <input type="text" style="height:100px ; font-size: xx-large ; width: 100px ; text-align: center;" id="number1" disabled>
+</div>
+<div><h1 style="font-size: 100px;">+</h1></div>
+<div style="margin:20px">
+  <label>
+    <h1>number 2</h1>
+  </label>
+  <input type="text" style="height:100px ; font-size: xx-large; width: 100px; text-align: center;" id="number2" disabled>
+</div>
+<div><h1 style="font-size: 100px; ">=</h1></div>
+<div style="margin:20px">
+  <label>
+    <h1>Equals</h1>
+  </label>
+  <input type="text" style="height:100px ; font-size: xx-large ; width: 100px ; text-align: center;" id="equaler" >
+</div>
+</div>
+<div style="margin:20px; display:flex; align-items: center;">
+  <div style="justify-content: center;">
+  <label><h1>Equals</h1></label>
+  <button style="height:100px; width: 100px;; font-size: large" id="submit">Submit</button>
+</div>
+<div id="numberContainer" style="display:flexbox; width:600px;height:300px; ">
+  <button style="width:100px;height: 100px;background-color: blueviolet; color:whitesmoke; font-size: xx-large;cursor:pointer" class="btn" value="0">0</button>
+  <button style="width:100px;height: 100px;background-color: blueviolet; color:whitesmoke; font-size: xx-large;cursor:pointer" class="btn" value="1">1</button>
+  <button style="width:100px;height: 100px;background-color: blueviolet; color:whitesmoke; font-size: xx-large;cursor:pointer" class="btn" value="2">2</button>
+  <button style="width:100px;height: 100px;background-color: blueviolet; color:whitesmoke; font-size: xx-large;cursor:pointer" class="btn" value="3">3</button>
+  <button style="width:100px;height: 100px;background-color: blueviolet; color:whitesmoke; font-size: xx-large;cursor:pointer" class="btn" value="4">4</button>
+  <button style="width:100px;height: 100px;background-color: blueviolet; color:whitesmoke; font-size: xx-large;cursor:pointer" class="btn" value="5">5</button>
+  <button style="width:100px;height: 100px;background-color: blueviolet; color:whitesmoke; font-size: xx-large;cursor:pointer" class="btn" value="6">6</button>
+  <button style="width:100px;height: 100px;background-color: blueviolet; color:whitesmoke; font-size: xx-large;cursor:pointer" class="btn" value="7">7</button>
+  <button style="width:100px;height: 100px;background-color: blueviolet; color:whitesmoke; font-size: xx-large;cursor:pointer" class="btn" value="8">8</button>
+  <button style="width:100px;height: 100px;background-color: blueviolet; color:whitesmoke; font-size: xx-large;cursor:pointer" class="btn" value="9">9</button>
+</div>
+</div>
+</form>
+<div id="true" hidden style="height:100px ;width: 100%;; font-size: xx-large; width: 150px; text-align: center; border:solid 1px black; background-color: green; color:wheat;"><h1>True</h1></div>
+<div id="false" hidden style="height:100px ;width: 100%; font-size: xx-large; width: 150px; text-align: center; border:solid 1px black; background-color: red; color:wheat;">False</div>
+</div>
+<div style="width:100%; min-height:500px; display: flex; flex-direction: column; align-items:center;">
+  <div style="width:100px;font-size: xx-large;">Scores</div>
+<ol style="width: 100%; font-size: xx-large; text-align: center;" id="scoreContainer">
+</ol>
+</div>
+  </body>
+  <script src="add.js"></script>
+</html>
